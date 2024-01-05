@@ -22,3 +22,26 @@ async function fetchCatFact() {
 
 
 fetchCatFact();
+
+
+async function searchMeowFact() {
+    const searchInput = document.getElementById('searchInput');
+    const meowFactContainer = document.getElementById('meowFactContainer');
+
+    try {
+    
+    const searchTerm = searchInput.value;
+
+    
+    if (searchTerm.trim() === '') {
+        alert('Please enter a search term.');
+        return;
+    }  const meowFact = await fetchMeowFactBySearch(searchTerm);
+
+    
+    meowFactContainer.innerHTML = `<p>${meowFact}</p>`;
+    } catch (error) {
+    
+    meowFactContainer.innerHTML = '<p>Error fetching MeowFact. Please try again.</p>';
+    }
+}
