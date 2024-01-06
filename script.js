@@ -110,3 +110,47 @@ function generateFact() {
     }, 8000);
 
 }
+// code isn't executing, typeerror. it was supposed to be images on the right that are available to see, gonna fix
+// function generateSubImage() {
+//     const imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUugtihyUKXyHppcrcI7aaceKvIRbBNVRbQ&usqp=CAU";
+//     const generatedImage = document.getElementById('generatedSubImage');
+//     generatedImage.src = imageUrl;
+//     generatedImage.style.display = 'block';
+// }
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     function generateSubImage() {
+//         const imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUugtihyUKXyHppcrcI7aaceKvIRbBNVRbQ&usqp=CAU";
+//         const generatedImage = document.getElementById('generatedImage');
+//         generatedImage.src = imageUrl;
+//         generatedImage.style.display = 'block';
+//     }
+// });
+
+// function generateImage() {
+//     const imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUugtihyUKXyHppcrcI7aaceKvIRbBNVRbQ&usqp=CAU";
+//     const generatedImage = document.getElementById(imageId);
+//     generatedImage.src = imageUrl;
+//     generatedImage.style.display = 'block';
+// }
+
+function generateSubImage() {
+    const imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUugtihyUKXyHppcrcI7aaceKvIRbBNVRbQ&usqp=CAU";
+    const generatedImage = document.getElementById('generatedSubImage');
+    generatedImage.src = imageUrl;
+    generatedImage.style.display = 'block';
+}
+
+function generateSubImageTwo() {
+    const imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJbG7qId9W9f24FYHtpCiXqBBfLl6zIcWygA&usqp=CAU";
+    const generatedImage = document.getElementById('generateSubImageTwo');
+    generatedSubImageTwo.src = imageUrl;
+    generatedSubImageTwo.style.display = 'block';
+}
+
+function generateSubImageThree() {
+    const imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrI1gSXhnq15_pe9ZnYE0JSxI3FB8AVUjFJnHxkzvEZLbS_iPBsn7Pt48eBe5PRCROTMM&usqp=CAU";
+    const generatedImage = document.getElementById('generateSubImageThree');
+    generatedSubImageThree.src = imageUrl;
+    generatedSubImageThree.style.display = 'block';
+}
