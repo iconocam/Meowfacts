@@ -154,3 +154,20 @@ function generateSubImageThree() {
     generatedSubImageThree.src = imageUrl;
     generatedSubImageThree.style.display = 'block';
 }
+
+function submitComment() {
+    const userName = document.getElementById('userName').value;
+    const userComment = document.getElementById('userComment').value;
+
+    if (userName && userComment) {
+        const commentList = document.getElementById('commentList');
+        const commentItem = document.createElement('div');
+        commentItem.innerHTML = `<strong>${userName}:</strong> ${userComment}`;
+        commentList.appendChild(commentItem);
+
+    
+        document.getElementById('commentForm').reset();
+    } else {
+        alert('Please fill in both your name and idea.');
+    }
+}

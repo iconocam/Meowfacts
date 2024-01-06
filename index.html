@@ -54,6 +54,23 @@ Cats are the best so
             <!-- <div id="subImageBoxTwo">
                 <button id="subImageGenerate" onclick="generateSubImageTwo()">See Image</button>
                 <img id="generatedSubImage" src="" alt="Generated Image"></div> -->
+
+                <div class="comment-container">
+                    <h2>Give Us Your Ideas!</h2>
+                    <form id="commentForm">
+                        <label for="userName">Your Name:</label>
+                        <input type="text" id="userName" name="userName" required>
+            
+                        <label for="userComment">Your Idea:</label>
+                        <textarea id="userComment" name="userComment" rows="4" required></textarea>
+            
+                        <button type="button" onclick="submitComment()">Submit</button>
+                    </form>
+            
+                    <div id="commentList">
+                        <!-- Display submitted comments here -->
+                    </div>
+                </div>
     </div>
     
     
