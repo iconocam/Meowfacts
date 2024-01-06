@@ -1,4 +1,4 @@
-// Function to fetch data from the Axolotl API
+
 async function fetchCatFact() {
     try {
     
@@ -24,13 +24,42 @@ async function fetchCatFact() {
 fetchCatFact();
 
 
+async function fetchMeowFactBySearch(searchTerm) {
+    try {
+    
+    const response = await fetch(`https://meowfacts.herokuapp.com/${searchTerm}`);
+
+    
+    if (!response.ok) {
+        throw new Error('Network response was not ok');
+    }
+
+    
+    const data = await response.json();
+
+    
+    return data.data;
+    } catch (error) {
+    
+    console.error('Error fetching MeowFact:', error.message);
+    throw error;
+    }
+}
+
+function navigateToMeowFacts() {
+    window.open('https://meowfacts.herokuapp.com/', '_blank');
+}
+
 async function searchMeowFact() {
     const searchInput = document.getElementById('searchInput');
     const meowFactContainer = document.getElementById('meowFactContainer');
 
     try {
     
-    const searchTerm = searchInput.value;
+    // const searchTerm = searchInput.value;
+    // function navigateToMeowFacts() {
+    //     window.location.href = 'https://meowfacts.herokuapp.com/';
+    // }
 
     
     if (searchTerm.trim() === '') {
@@ -45,3 +74,4 @@ async function searchMeowFact() {
     meowFactContainer.innerHTML = '<p>Error fetching MeowFact. Please try again.</p>';
     }
 }
+
