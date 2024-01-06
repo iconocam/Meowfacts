@@ -74,4 +74,38 @@ async function searchMeowFact() {
     meowFactContainer.innerHTML = '<p>Error fetching MeowFact. Please try again.</p>';
     }
 }
+// cannot use import statement outside a module so this is commented out now
+// import { generateFact } from './manifesto.js';
 
+// const generateFact = require('manifesto.js');
+
+
+
+
+function generateFact() {
+    const catFacts= ["The ancestor of all domestic cats is the African Wild Cat which still exists today.",
+    "Cats have five toes on their front paws but only four on their back paws.",
+    "A group of cats is called a clowder.",
+    "The world's oldest known pet cat was found in a 9,500-year-old grave on the Mediterranean island of Cyprus.",
+    "Cats, especially older cats, do get cancer. Many times this disease can be treated successfully.",
+    "Mother cats teach their kittens to use the litter box.",
+    "Studies now show that the allergen in cats is related to their scent glands. Cats have scent glands on their faces and at the base of their tails. Entire male cats generate the most scent. If this secretion from the scent glands is the allergen, allergic people should tolerate spayed female cats the best.",
+    "The average cat food meal is the equivalent to about five mice."];
+    
+    const randomIndex = Math.floor(Math.random() * catFacts.length);
+
+
+    const randomFact = catFacts[randomIndex];
+
+
+    const factBox = document.getElementById('factBox');
+    factBox.style.display = 'block';
+
+    const factText = document.getElementById('factText');
+    factText.textContent = randomFact;
+
+    setTimeout(() => {
+        factBox.style.display = 'none';
+    }, 8000);
+
+}

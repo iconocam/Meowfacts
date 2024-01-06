@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meowfacts</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
     <div class="content">
     <h1>Meow-FactEngine</h1>
 
-    <label for ="searchInput"><strong>Search a Meow Fact('3')</strong></label>
-    <input type="text" id="searchInput" placeholder="Enter Query Phrase">
+    <label for="searchInput"><strong>Search a Meow Fact('3')</strong></label>
+    <input type="text" id="searchInput" placeholder="Enter Query Phrase" />
     <button onclick="navigateToMeowFacts()">MeowFact?</button>
     </div>
+    
+
     <div class="image-container">
-        <img class="background-image" src="https://discover.pbcgov.org/publicsafety/animalcare/SiteImages/kittens-2.jpg">
+    <img
+        class="background-image"
+        src="https://discover.pbcgov.org/publicsafety/animalcare/SiteImages/kittens-2.jpg"
+    />
     </div>
+    <div class="fact-container">
+        <button onclick="generateFact()">Generate Other Fact</button>
+        <div id="factBox">
+            <p id="factText"></p>
+        </div>
+        </div>
     <!--cant use search query so this is commented out-->
-<!-- <div id="meowFactContainer">
+    <!-- <div id="meowFactContainer">
         Meow Fact will be displayed here!! :D -->
-    <!--</div> --> 
+    <!--</div> -->
 
-
-<!--button onclick not defined yet-->
-<!-- I cannot use search query because the API doesn't support it, i will make it so user can find a meowfact simply with onclick rather than search query.-->
+    <!--button onclick not defined yet-->
+    <!-- I cannot use search query because the API doesn't support it, i will make it so user can find a meowfact simply with onclick rather than search query.-->
     <script src="script.js"></script>
     <script src="manifesto.js"></script>
-
 </body>
 </html>
