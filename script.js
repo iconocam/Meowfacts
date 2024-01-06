@@ -90,7 +90,8 @@ function generateFact() {
     "Cats, especially older cats, do get cancer. Many times this disease can be treated successfully.",
     "Mother cats teach their kittens to use the litter box.",
     "Studies now show that the allergen in cats is related to their scent glands. Cats have scent glands on their faces and at the base of their tails. Entire male cats generate the most scent. If this secretion from the scent glands is the allergen, allergic people should tolerate spayed female cats the best.",
-    "The average cat food meal is the equivalent to about five mice."];
+    "The average cat food meal is the equivalent to about five mice.",
+    "Your cat recognizes your voice but just acts too cool to care (probably because they are)."];
     
     const randomIndex = Math.floor(Math.random() * catFacts.length);
 
