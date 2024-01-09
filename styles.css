@@ -1,5 +1,5 @@
 body {
-    margin-right: 850px;
+    margin-right: 1200px;
     padding: 0;
     display: flex;
     align-items: center;
@@ -129,6 +129,45 @@ button:hover {
     /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1); */
 }
 
+#subImageBoxFour {
+    position: fixed;
+    top: 600px;
+    right: 0px;
+    width: 200px;
+    height: 20vh;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1); */
+}
+/* #subImageBoxFour {
+    position: fixed;
+    top: 800x;
+    right: 0px;
+    width: 200px;
+    height: 20vh;
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    /* box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1); */
+} */
+
+/* tried to center the sub image boxes but it no working*/
+#allImageBox,
+    #subImageBox,
+        #subImageBoxTwo,
+        #subImageBoxThree {
+            
+            text-align: center;
+            margin: 10px;
+        }
+
 #subImageGeneration {
     margin-top: 20px;
             padding: 5px;
@@ -149,7 +188,18 @@ button:hover {
             cursor: pointer;
 }
 
+
 #subImageGenerationThree {
+    margin-top: 20px;
+            padding: 5px;
+            background-color: #3494e6;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+}
+
+#subImageGenerationFour {
     margin-top: 20px;
             padding: 5px;
             background-color: #3494e6;
@@ -180,7 +230,14 @@ button:hover {
             display: none;
 }
 
-/* trying to place comment container in center of the page !! but i think some other code is overriding it and im scared to break it. */
+#generatedSubImageFour {
+    max-width: 100%;
+            height:fit-content;
+            margin-top: 5px;
+            display: none;
+}
+
+/* trying to place comment container in center of the page !! but i think some other code is overriding it and im scared to break it argh */
 .comment-container {
     background-color: #fff;
     padding: 20px;

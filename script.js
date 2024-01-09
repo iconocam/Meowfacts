@@ -155,6 +155,13 @@ function generateSubImageThree() {
     generatedSubImageThree.style.display = 'block';
 }
 
+function generateSubImageFour() {
+    const imageUrl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSGlXwv9zz8HCnn1DJwBqFPrwOkdl9QaiBfA&usqp=CAU";
+    const generatedImage = document.getElementById('generateSubImageFour');
+    generatedSubImageFour.src = imageUrl;
+    generatedSubImageFour.style.display = 'block';
+}
+
 function submitComment() {
     const userName = document.getElementById('userName').value;
     const userComment = document.getElementById('userComment').value;
@@ -168,6 +175,7 @@ function submitComment() {
     
         document.getElementById('commentForm').reset();
     } else {
-        alert('Please fill in both your name and idea.');
+        alert('Do you want to get scratched? Fill out the inputs!');
     }
 }
+

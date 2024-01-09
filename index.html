@@ -30,7 +30,7 @@ Cats are the best so
                 <!-- Add more list items as needed -->
             </ul>
         </div>
-
+        <div id="allImageBox">
         <div id="subImageBox">
             <button id="subImageGeneration" onclick="generateSubImage()">See More Kitties</button>
             <img id="generatedSubImage" src="" alt="">
@@ -45,6 +45,13 @@ Cats are the best so
                     <img id="generatedSubImageThree" src="" alt="">
                     </div>
 
+                    <div id="subImageBoxFour">
+                        <button id="subImageGenerationFour" onclick="generateSubImageFour()"> little baby alert </button>
+                        <img id="generatedSubImageFour" src="" alt="">
+                        </div>
+                    </div>
+                
+
                 
 
             <!-- <button class="subImageGenerate" onclick="generateImage('generatedImage2')">Generate Image 2</button>
@@ -58,11 +65,13 @@ Cats are the best so
                 <div class="comment-container">
                     <h2>Give Us Your Ideas!</h2>
                     <form id="commentForm">
+                        <!--got this error; A form field has an id or name attribute that the browser's autofill recognizes. However, it doesn't have an autocomplete attribute assigned. This might prevent the browser from correctly autofilling the form.
+To fix this issue, provide an autocomplete attribute-->
                         <label for="userName">Your Name:</label>
-                        <input type="text" id="userName" name="userName" required>
+                        <input type="text" id="userName" name="userName" autocomplete="name" required>
             
                         <label for="userComment">Your Idea:</label>
-                        <textarea id="userComment" name="userComment" rows="4" required></textarea>
+                        <textarea id="userComment" name="userComment" rows="4" autocomplete="off" required></textarea>
             
                         <button type="button" onclick="submitComment()">Submit</button>
                     </form>
